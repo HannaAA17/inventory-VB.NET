@@ -25,4 +25,10 @@
         productForm.ShowDialog()
         productForm.Dispose()
     End Sub
+
+    Private Sub btn_clients_Click(sender As Object, e As EventArgs) Handles btn_clients.Click
+        Dim UserForm As New UserForm()
+        UserForm.ShowDialog()
+        UserForm.Dispose()
+    End Sub
 End Class

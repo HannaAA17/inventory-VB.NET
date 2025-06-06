@@ -3,7 +3,7 @@ Imports inventory.DataClients
 
 Public Class ProductForm
     'Private ReadOnly productClient As New ProductClient()
-    Private ReadOnly factory As IRepositoryFactory = New RepositoryFactory(InitializeDatabase())
+    Private ReadOnly factory As IRepositoryFactory = New DataClients.RepositoryFactory(InitializeDatabase())
     Private ReadOnly productClient As IRepository(Of Product) = factory.CreateRepository(Of Product)()
 
     Public Sub New()

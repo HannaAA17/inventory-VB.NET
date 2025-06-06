@@ -7,7 +7,7 @@ Module DatabaseHelper
 
         ' Initialize database path
         Dim DbPath = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            Application.StartupPath,
             "inventory",
             "appdata.db"
         )

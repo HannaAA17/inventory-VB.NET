@@ -2,7 +2,10 @@
 Imports inventory.DataClients
 
 Public Class UserForm
-    Private ReadOnly userClient As New UserClient()
+    'Private ReadOnly productClient As New ProductClient()
+    Private ReadOnly factory As IRepositoryFactory = New DataClients.RepositoryFactory(InitializeDatabase())
+    Private ReadOnly userClient As IRepository(Of User) = factory.CreateRepository(Of User)()
+
     Public Sub New()
         ' This call is required by the designer.
         InitializeComponent()
@@ -17,7 +20,7 @@ Public Class UserForm
 
     Private Sub LoadUsers()
         dgvUsers.DataSource = Nothing
-        dgvUsers.DataSource = userClient.ReadAll()
+        dgvUsers.DataSource = userClient.GetAll()
         dgvUsers.ClearSelection()
     End Sub
 
