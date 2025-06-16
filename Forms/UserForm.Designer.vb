@@ -43,7 +43,7 @@ Partial Class UserForm
         ' 
         ' txtName
         ' 
-        txtName.Location = New Point(27, 26)
+        txtName.Location = New Point(118, 26)
         txtName.Name = "txtName"
         txtName.Size = New Size(373, 27)
         txtName.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class UserForm
         ' 
         ' txtEmail
         ' 
-        txtEmail.Location = New Point(27, 59)
+        txtEmail.Location = New Point(118, 59)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(373, 27)
         txtEmail.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class UserForm
         ' 
         ' txtPhone
         ' 
-        txtPhone.Location = New Point(27, 92)
+        txtPhone.Location = New Point(118, 92)
         txtPhone.Name = "txtPhone"
         txtPhone.Size = New Size(373, 27)
         txtPhone.TabIndex = 2
@@ -67,38 +67,38 @@ Partial Class UserForm
         ' 
         ' btnAdd
         ' 
-        btnAdd.Location = New Point(424, 26)
+        btnAdd.Location = New Point(515, 26)
         btnAdd.Name = "btnAdd"
         btnAdd.Size = New Size(94, 27)
         btnAdd.TabIndex = 3
-        btnAdd.Text = "btnAdd"
+        btnAdd.Text = "Add"
         btnAdd.UseVisualStyleBackColor = True
         ' 
         ' btnUpdate
         ' 
-        btnUpdate.Location = New Point(424, 59)
+        btnUpdate.Location = New Point(515, 59)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(94, 27)
         btnUpdate.TabIndex = 4
-        btnUpdate.Text = "btnUpdate"
+        btnUpdate.Text = "Update"
         btnUpdate.UseVisualStyleBackColor = True
         ' 
         ' btnDelete
         ' 
-        btnDelete.Location = New Point(424, 92)
+        btnDelete.Location = New Point(515, 92)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(94, 27)
         btnDelete.TabIndex = 5
-        btnDelete.Text = "btnDelete"
+        btnDelete.Text = "Delete"
         btnDelete.UseVisualStyleBackColor = True
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(306, 125)
+        btnClear.Location = New Point(397, 125)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(94, 27)
         btnClear.TabIndex = 6
-        btnClear.Text = "btnClear"
+        btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' dgvUsers
@@ -111,7 +111,7 @@ Partial Class UserForm
         dgvUsers.Columns.AddRange(New DataGridViewColumn() {colName, colEmail, colPhone})
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Window
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9.0F)
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
         DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
@@ -130,7 +130,7 @@ Partial Class UserForm
         ' 
         colName.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         colName.DataPropertyName = "Name"
-        colName.FillWeight = 60.0F
+        colName.FillWeight = 60F
         colName.HeaderText = "Name"
         colName.MinimumWidth = 6
         colName.Name = "colName"
@@ -181,15 +181,15 @@ Partial Class UserForm
         GroupBox2.TabIndex = 9
         GroupBox2.TabStop = False
         ' 
-        ' MainForm
+        ' UserForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(652, 393)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         MinimumSize = New Size(670, 440)
-        Name = "MainForm"
+        Name = "UserForm"
         Text = "Form1"
         CType(dgvUsers, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)

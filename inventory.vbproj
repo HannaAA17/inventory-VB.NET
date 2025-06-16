@@ -28,9 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Forms\UserForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\UserForm.vb" />
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

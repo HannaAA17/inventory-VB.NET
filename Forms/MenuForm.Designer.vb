@@ -26,8 +26,8 @@ Partial Class MenuForm
         btn_vendors = New Button()
         btn_clients = New Button()
         btn_stock = New Button()
-        btn_order = New Button()
         btn_sale = New Button()
+        btn_order = New Button()
         btn_login = New Button()
         GroupBox1 = New GroupBox()
         GroupBox1.SuspendLayout()
@@ -77,27 +77,27 @@ Partial Class MenuForm
         btn_stock.Text = "Stock"
         btn_stock.UseVisualStyleBackColor = True
         ' 
-        ' btn_order
-        ' 
-        btn_order.Cursor = Cursors.Hand
-        btn_order.Font = New Font("Times New Roman", 13.8F, FontStyle.Bold)
-        btn_order.Location = New Point(244, 274)
-        btn_order.Name = "btn_order"
-        btn_order.Size = New Size(232, 118)
-        btn_order.TabIndex = 5
-        btn_order.Text = "Order"
-        btn_order.UseVisualStyleBackColor = True
-        ' 
         ' btn_sale
         ' 
         btn_sale.Cursor = Cursors.Hand
         btn_sale.Font = New Font("Times New Roman", 13.8F, FontStyle.Bold)
-        btn_sale.Location = New Point(244, 150)
+        btn_sale.Location = New Point(244, 274)
         btn_sale.Name = "btn_sale"
         btn_sale.Size = New Size(232, 118)
-        btn_sale.TabIndex = 4
+        btn_sale.TabIndex = 5
         btn_sale.Text = "Sale"
         btn_sale.UseVisualStyleBackColor = True
+        ' 
+        ' btn_order
+        ' 
+        btn_order.Cursor = Cursors.Hand
+        btn_order.Font = New Font("Times New Roman", 13.8F, FontStyle.Bold)
+        btn_order.Location = New Point(244, 150)
+        btn_order.Name = "btn_order"
+        btn_order.Size = New Size(232, 118)
+        btn_order.TabIndex = 4
+        btn_order.Text = "Order"
+        btn_order.UseVisualStyleBackColor = True
         ' 
         ' btn_login
         ' 
@@ -112,8 +112,8 @@ Partial Class MenuForm
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(btn_products)
-        GroupBox1.Controls.Add(btn_order)
         GroupBox1.Controls.Add(btn_sale)
+        GroupBox1.Controls.Add(btn_order)
         GroupBox1.Controls.Add(btn_vendors)
         GroupBox1.Controls.Add(btn_stock)
         GroupBox1.Controls.Add(btn_clients)
@@ -141,8 +141,8 @@ Partial Class MenuForm
     Friend WithEvents btn_vendors As Button
     Friend WithEvents btn_clients As Button
     Friend WithEvents btn_stock As Button
-    Friend WithEvents btn_order As Button
     Friend WithEvents btn_sale As Button
+    Friend WithEvents btn_order As Button
     Friend WithEvents btn_login As Button
     Friend WithEvents GroupBox1 As GroupBox
 End Class
